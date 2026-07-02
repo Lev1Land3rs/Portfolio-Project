@@ -1,0 +1,624 @@
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    overflow: auto;
+    BACKGROUND-COLOR: #f4f4f4;
+    font-family: FontName;
+    
+}
+
+.bulletinboard {
+    width: 1580px;
+    height: 600px;
+    font-family: FontName;
+    background-color:transparent;
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 23px;
+    
+    
+    position: relative;
+
+
+    
+    
+
+}
+
+
+
+#Typer {
+    width: 240px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 0;
+}
+
+#myportfolio {
+    text-align: right;
+}
+
+#pensil {
+    width: 100px;
+    height: 25;
+
+
+    transform: scale(1.5);
+    transform: rotate(145deg);
+
+}
+
+.navimg {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    transition: 0.4s;
+
+}
+
+.navimg:hover {
+
+    border: solid 5px #000000
+}
+
+#navimage {
+    scale: 50%;
+   
+    
+}
+
+
+
+
+
+#line {
+    display: inline;
+    width: 180px;
+    height: 5px;
+    background-color: #414040;
+    animation-duration: 2.1s;
+    animation-fill-mode: forwards;
+    animation-name: Lineslide;
+}
+
+.line1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 10px;
+    width: 220px;
+    margin-top: -50px;
+
+}
+
+.pencil {
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+    margin-top: -25px;
+
+    animation-name: Pencilslide;
+    animation-duration: 2.1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes Pencilslide {
+
+    from {
+        display: flex;
+        justify-content: center;
+        margin-right: 180px;
+        margin-top: -25px;
+
+    }
+
+    to {
+        display: flex;
+        justify-content: center;
+        margin-right: -220px;
+        margin-top: -25px;
+        visibility: hidden;
+    }
+}
+
+
+
+@keyframes Lineslide {
+
+    from {
+        width: 10px;
+
+
+
+
+
+
+    }
+
+    to {
+        width: 220px;
+
+
+
+
+
+
+    }
+
+
+}
+
+
+.Navba {
+
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+    padding: 2px;
+    align-items: center;
+    margin-left: -35px;
+    display: none;
+    
+}
+
+/* Options Of Nav Bar */
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+.navitem {
+    border: solid rgb(0, 0, 0) 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: auto;
+    padding: 2px;
+    animation: Navba 2s ease forwards;
+    background-color: #adadad77;
+    backdrop-filter: blur(2px);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+/* .postit1{
+    width: 200px;
+    height: 200px;
+     scale: 4;
+    border: solid #AE7943 5px;
+    background: url("./Transparent\ post-it.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin-top: 250px;
+    display: none;
+    background-color: #CC8D46;
+
+} */
+
+.Imbedview{
+   
+    width: 1580px;
+    height: 2000px;
+    margin-top: 50px;
+    background-color: rgb(255, 255, 255)
+
+
+}
+
+
+
+::-webkit-scrollbar{
+    display: none;
+}
+@keyframes Navba {
+    from {
+        height: 0;
+        width: 0;
+
+    }
+
+    to {
+        height: 25px;
+        width: 200px;
+
+
+    }
+
+
+}
+
+@keyframes Minimize {
+
+    from {
+        transform: rotate(90deg) scale(1);
+    }
+
+    to {
+        transform: rotate(1080deg) scale(0.001);
+    }
+
+
+}
+
+
+@keyframes Maximize {
+
+    from {
+        transform: rotate(1080deg) scale(0.001);
+    }
+
+    to {
+        transform: rotate(0deg) scale(1);
+    }
+
+
+}
+/* Sections of Portfolio */
+#AboutMeFrame {
+    width: 1580px;
+    height: 2000px;
+    margin-top: 50px;
+    background-color: transparent;
+    border:none;
+}
+
+
+
+#ProjectFrame {
+    width: 1580px;
+    height: 1000px;
+    margin-top: 50px;
+    background-color: transparent;
+    border:none;
+}
+
+#ContactFrame {
+    width: 1580px;
+    height: 1000px;
+    margin-top: 50px;
+    background-color: transparent;
+    border:none;
+}
+/* Scroll Bar Removing */
+.Imbedview::-webkit-scrollbar {
+    display: none !important;
+}
+
+/* Sticky Navigation Bar */
+.Navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    padding: 2px;
+    transition: 0.4s ease;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 80%;
+   
+
+}
+
+/* BACKGROUND */
+.BgImage1, .BgImage2, .BgImage3 {
+    width: 250px;
+    height: 200px;
+    position: relative;
+    animation: Move 20s infinite linear;
+    padding: 18px;
+}
+
+
+@keyframes Move {
+    from {
+        left : 00px;
+        top: 5000px
+    }
+
+    to { 
+        left: 1200px;
+        top: 5350px;
+    }
+}
+
+.BgImage4, .BgImage5, .BgImage6 {
+    width: 320px;
+    height: 320px;
+    position: relative;
+    animation: Move2 15s infinite linear;
+    padding: 100px;
+
+}
+
+
+@keyframes Move2 {
+    from {
+        left: 1600px;
+        top: 5400px
+    }
+
+    to {
+        
+        left: 0px;
+        top: 4800px;
+    }
+}
+
+.BgImage7, .BgImage8, .BgImage9 {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    animation: Move3 30s linear infinite;
+    left: 150px;
+    padding: 20px;
+    
+    
+}
+
+@keyframes Move3 {
+    from {
+        top: 100px;
+        left: 150px;
+    }
+
+    to {
+        top: 9500px;
+        left: 350px;
+    }
+}
+
+.BgImage10, .BgImage11, .BgImage12 {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    left: 350px;
+    animation: Move4 40s linear infinite;
+    padding: 20px;
+
+   
+}
+
+@keyframes Move4 {
+    from {
+        top: 200px;
+        left: 350px;
+    }
+
+    to {
+        top: 9500px;
+        left: 100px;
+    }
+}
+
+.BgImage13, .BgImage14, .BgImage15 {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    animation: Move5 40s linear infinite;
+    border: solid 5px black;
+    padding: 10px;
+    left: 100px;
+}
+@keyframes Move5 {
+    from {
+        
+        top: 9500px;
+        left: 450px;
+    }
+
+    to {
+        top: 0px;
+        left: 100px;
+    }
+}
+.BgImage16, .BgImage17, .BgImage18 {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    animation: Move6 30s linear infinite;
+}
+@keyframes Move6 {
+    from {
+        top: 9500px;
+    }
+
+    to {
+        top: 0px;
+    }
+}
+
+.BgImage19, .BgImage20, .BgImage21 {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    left: 300px;
+    animation: Move7 20s linear infinite;
+}
+
+@keyframes Move7 {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 5000px;
+    }
+}
+
+.BgImage22, .BgImage23, .BgImage24 {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    animation: Move8 10s linear infinite;
+}
+@keyframes Move8 {
+    from {
+        top: 5000px;
+    }
+
+    to {
+        top: 0px;
+    }
+}
+.BgImage25, .BgImage26, .BgImage27 {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    left: 300px;
+    animation: Move9 15s linear infinite;
+}
+@keyframes Move9 {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 5000px;
+    }
+}
+.BgImage28, .BgImage29, .BgImage30 {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    animation: Move10 20s linear infinite;
+}
+@keyframes Move10 {
+    from {
+        top: 5000px;
+    }
+
+    to {
+        top: 0px;
+    }
+}
+.BgImage31, .BgImage32, .BgImage33 {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    left: 300px;
+    animation: Move11 10s linear infinite;
+}
+@keyframes Move11 {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 5000px;
+    }
+}
+.BgImage34, .BgImage35, .BgImage36 {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    animation: Move12 10s linear infinite;
+}
+@keyframes Move12 {
+    from {
+        top: 5000px;
+    }
+
+    to {
+        top: 0px;
+    }
+}
+.BgImage37, .BgImage38, .BgImage39 {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    left: 300px;
+    animation: Move13 10s linear infinite;
+}
+@keyframes Move13 {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 5000px;
+    }
+}
+.BgImage40, .BgImage41 {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    animation: Move14 10s linear infinite;
+}
+@keyframes Move14 {
+    from {
+        top: 5000px;
+    }
+
+    to {
+        top: 0px;
+    }
+} 
+.BgImage1, .BgImage2, .BgImage3, .BgImage4, .BgImage5, .BgImage6, .BgImage7, .BgImage8, .BgImage9, .BgImage10, .BgImage11, .BgImage12, .BgImage13, .BgImage14, .BgImage15, .BgImage16, .BgImage17, .BgImage18, .BgImage19, .BgImage20, .BgImage21, .BgImage22, .BgImage23, .BgImage24, .BgImage25, .BgImage26, .BgImage27, .BgImage28, .BgImage29, .BgImage30, .BgImage31, .BgImage32, .BgImage33, .BgImage34, .BgImage35, .BgImage36, .BgImage37, .BgImage38, .BgImage39, .BgImage40, .BgImage41 {
+    
+    z-index: -1;
+    opacity: 0.8;
+}
+
+/* Keeping the Images in the Background of the Portfolio */
+.EntirePortfolio {
+    position: relative;
+}
+.Container{
+    position:absolute;
+}
+
+/* .AllImages{
+    width: 350px;
+    height: 400px;
+    position: relative;
+} */
+
+@font-face {
+    font-family: FontName;
+    src: url("./fonts/AnnieUseYourTelescope-Regular.ttf");
+}
+
+.EntirePortfolio {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+   
+
+}
+
+#Resume{
+    position: relative;
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
+}

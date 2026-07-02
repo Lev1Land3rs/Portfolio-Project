@@ -1,0 +1,217 @@
+.abotme{
+    width: 400px;
+    margin-left: 1000px;
+    float: left;
+    gap: 200px;
+
+
+
+} 
+
+#Typer2 {
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+
+
+
+
+
+}
+
+.AMnavimg {
+    border: #FDEA7D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    transition: 0.4s;
+
+}
+
+.AMnavimg:hover {
+
+    border: solid 5px #FDEA7D
+}
+
+
+#AMnavimage {
+ border: #FDEA7D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    transition: 0.4s;
+   
+    
+}
+
+
+.AMNavba {
+
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+    padding: 2px;
+    align-items: center;
+    margin-left: -35px;
+    
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+
+.AMnavitem {
+    border: solid black 2px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: auto;
+    padding: 2px;
+    animation: AMNavba 2s ease forwards;
+}
+
+
+.aboutmetittle {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    border: solid black 1px;
+
+    justify-content: center;
+
+}
+
+
+
+
+.pfp {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+   
+}
+
+
+
+
+
+
+.RBlogo{
+    width: 400px;
+    height: 400px;
+    border-radius: 80%;
+}
+
+.PicOfMe {
+    width: 400px;
+    height: 400px;
+    border-radius: 30%;
+   
+}
+.abotme1 {
+    width: 1560px;
+    height: 450px;
+    margin-top: 100px;
+    
+    display: flex;
+    gap: 300px;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    
+}
+.abotme2 {
+    width: 1560px;
+    height: 450px;
+    margin-top: 100px;
+    
+    display: flex;
+    Gap: 300px;
+    align-items: center; 
+    backdrop-filter: blur(10px);
+}
+
+.abotme3 {
+    width: 1560px;
+    height: 450px;
+    margin-top: 100px;
+   
+    display: flex;
+    Gap: 300px;
+    align-items: center; 
+    backdrop-filter: blur(10px);
+}
+
+
+
+
+
+@keyframes AMNavba {
+    from {
+        height: 0;
+        width: 0;
+
+    }
+
+    to {
+        height: 25px;
+        width: 200px;
+
+
+    }
+
+
+}
+
+/* @keyframes Minimize {
+
+    from {
+        transform: rotate(90deg) scale(1);
+    }
+
+    to {
+        transform: rotate(1080deg) scale(0.001);
+    }
+
+
+} */
+
+
+@keyframes Maximize {
+
+    from {
+        transform: rotate(1080deg) scale(0.001);
+    }
+
+    to {
+        transform: rotate(0deg) scale(1);
+    }
+
+
+}
+
+@font-face {
+    font-family: FontName;
+    src: url("./fonts/AnnieUseYourTelescope-Regular.ttf");
+}
+
+.wholeaboutme {
+    
+    font-family: FontName;
+    font-size: 28px;
+}
